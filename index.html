@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Kristen's Intro Notes</title>
+</head>
+
+<body>
+	<div class ="title">
+		<h1>Intro to Programming</h1>
+	</div>
+	<div class="toc">
+		<p class="toctitle"><em>Table of Contents</em></p>
+		Stage 0
+		<ul>
+			<li><a href="#AccessingaWebsite">Accessing a Website</a></li>
+			<li><a href="#AttributesinHTML">Attributes in HTML</a></li>
+		</ul>
+		Stage 1
+		<ul>
+			<li><a href="#LanguageRoles">Language Roles</a></li>
+			<li><a href="#GoogleDeveloperTools">Google Developer Tools</a></li>
+			<li><a href="#PageStructure">Page Structure</a></li>
+			<li><a href="#HTMLTagStructure">HTML Tag Structure</a></li>
+			<li><a href="#CSS">CSS</a></li>
+			<li><a href="#BoxModel">Box Model</a></li>
+			<li><a href="#CTR">Code, Test, Refine</a></li>
+		</ul>
+		Stage 2
+		<ul>
+			<li><a href="#CL">Command Line</a></li>
+			<li><a href="#Python">Python</a>
+				<ul>
+					<li><a href="#Variables">Variables in Python</a></li>
+					<li><a href="#Indexing">Indexing Strings</a></li>
+					<li><a href="#Search">Finding and Replacing</a></li>
+					<li><a href="#Functions">Functions</a></li>
+					<li><a href="#Equalities">Equality Comparisons</a></li>
+					<li><a href="#If">If Statements</a></li>
+					<li><a href="#While">While Loops</a></li>
+				</ul>
+			</li>
+			<li><a href="#Debug">Debugging</a></li>
+			<li><a href="#Comments">Writing Comments</a></li>
+			<li><a href="#Structured">Structured Data</a>
+				<ul>
+					<li><a href="#Mutation">Mutation</a></li>
+					<li><a href="#Alias">Aliasing</a></li>
+					<li><a href="#Operations">List Operations</a></li>
+					<li><a href="#For">For Loops</a></li>
+				</ul>
+			</li>
+			<li><a href="#Problem">Understanding a Computational Problem</a></li>
+		</ul>
+	</div>	
+	<div class="stage">
+	<h2>Stage 0</h2>
+	  <div class="notes">
+	    <h3><a id="AccessingaWebsite">Accessing a Website</a></h3>
+	    <ol>
+	      <li>you navigate to website on browser</li>
+	      <li>it is sent over the internet using</li>
+	      <li>HTTP (Hypertext Transfer Protocol) to...</li>
+	      <li>Servers which then send the site to your browser</li>
+	    </ol>
+	  </div>
+	  <div class="notes">
+	    <div>
+	      <h3><a id="AttributesinHTML">Attributes in HTML</a></h3>
+	      <ul>
+	        <li>Attributes generally require a closing tag.</li>
+	        <li>Those that do not are called "void."</li>
+	        <li>A completed attribute is referred to as an "element."</li>
+	        <li>Attributes can be inline or block.</li>
+	      </ul>
+	    </div>
+	    <div class="subsection">
+	      <h4>Some Inline Attributes</h4>
+	      <ul>
+	        <li>a href (links to a website)</li>
+	        <li>img (embeds an image)</li>
+	        <li>strong, em, b (text formatting)</li>
+	        <li>br (line break)</li>
+	      </ul>
+	    </div>
+	    <div class="subsection">
+	      <h4>Some Block Attributes</h4>
+	      <ul>
+	        <li>p (paragraph)</li>
+	        <li>span</li>
+	        <li>div</li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+	<div class="stage">
+	<h2>Stage 1</h2>
+	  <div class="notes">
+	    <h3><a id="LanguageRoles">Language Roles</a></h3>
+	    <ul>
+	      <li>HTML (HyperText Markup Language) = Structure</li>
+	      <li>CSS (Cascading Style Sheets) = Style</li>
+	      <li>JavaScript = Interactive Tools, ie; garage door opener</li>
+	    </ul>
+	  </div>
+	  <div class="notes">
+	    <h3><a id="GoogleDeveloperTools">Google Developer Tools</a></h3>
+	    <ul>
+	      <li>not all elements are visible</li>
+	      <li>all elements are rectangular</li>
+	      <li>everything is there down to the text that appears on the page</li>
+	    </ul>
+	  </div>
+	  <div class="notes">
+	    <h3><a id="PageStructure">Page Structure</a></h3>
+	    <ul>
+	      <li>the tree-like structure allows the programmer to more easily visualize the elements in the page</li>
+	      <li>DOM (Document Object Model) refers to the tree-like structure of programs</li>
+	      <li>HTML tags are made into elements in the DOM or "tree"</li>
+	      <li>HTML defines structure and content</li>
+	      <li>CSS defines the look</li>
+	      <li>CSS structure seems to start with larger, most basic elements and progress through the smaller, more specific pieces of a site</li>
+	    </ul>
+	  </div>
+	  <div class="notes">
+	    <h3><a id="HTMLTagStructure">HTML Tag Structure</a></h3>
+	    <p>In the following image "footer" is considered the <b>value</b> for the <b>attribute</b> "id". Also note that some tags (such as img) do not require a closing tag.</p>
+	    <div class="graphic">
+	      <img src="https://www.w3.org/wiki/images/a/a6/Article4-1.gif" alt="Image Has Moved"/>
+	      <p>Image Credit: w3.org</p>
+	    </div>
+	  </div>
+	  <div class="notes">
+	    <h3><a id="CSS">CSS (Cascading Style Sheets)</a></h3>
+	    <ul>
+	      <li>Rules in CSS start at the most specific and work their way down in priority</li>
+	      <li>In other words, the most specific overrules</li>
+	      <li>The rule that best describes the element is applied to that element</li>
+	      <li>CSS Style Order
+	      	<ul>
+	      		<li>default style browser</li>
+	        	<li>separate style sheet file</li>
+	        	<li>stylesheet inside HTML (NOT recommended except in small projects)</li>
+	        	<li>inline style element (avoid if possible)</li>
+	      	</ul>
+	      </li>
+	      <li>Cascading means that the rules are applied to elements that directly match <em>and</em> all child elements</li>
+	      <li>Most specific rules take effect in the event of overlapping rules</li>
+	    </ul>
+	  </div>
+	  <div class="notes">
+	    <h3><a id="BoxModel">Box Model</a></h3>
+	    <ul>
+	      <li>Content: Very center, image or content</li>
+	      <li>Padding: clears and area around the content</li>
+	      <li>Border: goes around padding and content</li>
+	      <li>Margin: clears area around border, no background color</li>
+	    </ul>
+	    <div class="graphic">
+	      <img src="https://www.w3.org/TR/CSS2/images/boxdim.png" alt="Image Has Moved"/>
+	      <p>Image Credit: w3.org</p>
+	    </div>
+	  </div>
+	  <div class="notes">
+	    <h3><a id="CTR">Code, Test, Refine</a></h3>
+	    <ul>
+	      <li>First, get the structure right by "boxifying"
+	      	<ul>
+	        	<li>Look for natural boxes</li>
+	        	<li>Look for repeated styles and semantic elements</li>
+	      	</ul>
+	      </li>
+	      <li>Write your HTML
+	      	<ul>
+	          <li>tags (headings, etc)</li>
+	      	</ul>
+	      </li>
+	      <li>Apply styles (biggest to smallest)
+	      	<ul>
+	        	<li>Size</li>
+	        	<li>Positioning</li>
+	      	</ul>
+	      </li>
+	      <li>Then focus on smaller details</li>
+	      <li>Lastly, go back and fix things</li>
+	    </ul>
+	  </div>
+	</div>
+	<div class="stage">
+	<h2>Stage 2</h2>
+		<div class="notes">
+			<h3><a id="CL">Command Line</a></h3>
+			<ul>
+				<li>use GitBash to navigate command line for course purposes</li>
+				<li>different commands in command line include
+					<ul>
+						<li>ls - list contents of current directory</li>
+						<li>cd - "change directory" to another one in your current directory</li>
+						<li>cd.. - move up to the parent directory</li>
+						<li>pwd - print working directory, tells you where you are</li>
+						<li>start (open on a Mac) - to open a currently existing file or folder</li>
+						<li>mkdir - "make directory", creates a new folder in your current directory</li>
+						<li>touch - creates a new file in your current diredtory (you need to use the suffix to name the file type), this will also update a currently existing file's timestamp</li>
+						<li>rm - "remove" to permanently delete a file</li>
+						<li>rmdir - "remove direcctory" this will only delete empty directories</li>
+						<li>rm -rf - "remove with recursive force" BEWARE, it will permanently delete the directory along with any files and folders inside</li>
+					</ul>
+				</li>
+				<li>you can do multiple actions of the same type at once by placing a space between the items you want to perform the action on, for example <b>rm first.txt second.txt third.txt</b> would delete all three of those files. You can also do this with mkdir</li>
+				<li>for our purposes in this course, use your CLI to run your Python code. Do this by navigating to the directory and then typing <em>python[name_of_file]</em></li>
+				<li>it will run the code and tell you about any errors</li>
+			</ul>
+		</div>
+		<div class="notes">
+			<h3><a id="Python">Python</a></h3>
+			<ul>
+				<li>Backus Naur Form (a way of writing something and replacing until you come to all terminal items)</li>
+				<li>expression operator expression - (with Python) expressions can be replaced with expressions or numbers, operators include (+-*/)</li>
+				<li>in Python variables are created simply by making the variable name equal to its desired value</li>
+			</ul>
+			<div class="subsection">
+				<h4><a id="Variables">Variables in Python</a></h4>
+				<ul>
+					<li>can be used to store numbers or strings</li>
+					<li>you assign a variable a value by typing the name of your variable, an equals sign and the value that you want your variable to hold</li>
+					<li>when Python evaluates that assignment it considers the right side first, and assigns it to the variable name you provided on the left</li>
+					<li>the equals sign is used to store the value not to denote equality as in a math problem</li>
+					<li>strings are denoted by '' or ""</li>
+					<li>"2" is a string and 2 is a number</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="Indexing">Indexing Strings</a></h4>
+				<ul>
+					<li>an index on a string is a location</li>
+					<li>the index starts with 0 and each symbol in the string is assigned a number counting up from there</li>
+					<li>you can use indexing to find specific items in a string or to remove or add to a string</li>
+					<li>indexing can also be useful in capitalization and in finding an entire string within the search area</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="Search">Finding and Replacing</a></h4>
+				<ul>
+					<li><em>string.find("thing_to_find", start_here)</em> returns the location of thing_to_find. Start here can be a number or a variable defined with a number that tells the program where to start looking in the string</li>
+					<li><em>string.replace("thing_to_find", "new_thing")</em> replaces thing_to_find with new_thing. You can set a max number of characters as a third parameter if you want</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="Functions">Functions</a></h4>
+				<ul>
+					<li>input is what you tell the computer</li>
+					<li>output is what the computer returns</li>
+					<li>functions in python start like this: <em>function_name(parameters, parameters)</em></li>
+					<li>if you want a function to do anything outside of itself you have to include a return statement</li>
+					<li>anything after the last return statement will not be evaluated</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="Equalities">Equality Comparisons</a></h4>
+				<ul>
+					<li> less than(&lt;), greater than(&gt;), less than/equal to(&lt;=), greater than/equal to(&gt;=), not equal to(!=), equal to(==)</li>
+					<li>output Boolean value: True or False</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="If">If Statements</a></h4>
+				<ul>
+					<li>always place a colon after the if or the else statment to indicate the beginning of the if statment execution code</li>
+					<li>indention indicates whether code is included in the if else statement</li>
+					<li>you can use <em>or</em> when checking for two different True possibilities</li>
+					<li>with or the computer checks the first condition and if it is true the second condition is not evaluated</li>
+					<li>if the first condition of the or statement is false, the value of the second condition is the value of the whole statement</li>
+					<li>you can nest if statments</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="While">While Loops</a></h4>
+				<ul>
+					<li>set up similarly to if statements but iterates until its condition is fulfilled</li>
+					<li>this can lead to infinite loops</li>
+					<li><em>break</em> statements give us a way to exit a loop even while it is still true</li>
+					<li>this can help prevent infinite loops</li>
+					<li>break statements are if statements with a condition that uses bread to exit the loops</li>
+				</ul>
+			</div>
+		</div>
+		<div class="notes">
+			<h3><a id="Debug">Debugging</a></h3>
+			<div class="subsection">
+				<h4>Examining Error Messages</h4>
+					<ul>
+						<li>in Python these are called <em>tracebacks</em></li>
+						<li>they give you line numbers and error types</li>
+						<li>you can google these to find solutions</li>
+					</ul>
+			</div>
+			<div class="subsection">
+				<h4>Checking Intermediate Results</h4>
+					<ul>
+						<li>a good strategy when working from example code is to copy and paste and then make changes one at a time, checking for errors along the way</li>
+						<li>then when you have a working example of what you want, compare it to your first try (which should be commented out for clarity's sake)</li>
+						<li>when bugs do not create error message it can be harder to locate the problem</li>
+						<li>printing things along the way can help to narrow down the portion of your code that is causing problems</li>
+					</ul>
+			</div>
+			<div class="subsection">
+				<h4>Keep and Compare Old Versions</h4>
+					<ul>
+						<li>it's better to try different versions in the same file and comment out the ones you are not currently working on</li>
+						<li>the comparison that you get with this method can help you to see your errors</li>
+					</ul>
+			</div>
+		</div>
+		<div class="notes">
+			<h3><a id="Comments">Writing Comments</a></h3>
+			<ul>
+				<li>don't comment on self-explanatory items</li>
+				<li>start functions and classes with a comment about the expected inputs and outputs as well as the purpose of the funcion or class</li>
+				<li>update comments as you go when things change</li>
+				<li>keep comments as concise as possible (if this is difficult your process within the code could probably use some work, your code should not depend on comments for readability)</li>
+			</ul>
+		</div>
+		<div class="notes">
+			<h3><a id="Structured">Structured Data</a></h3>
+			<ul>
+				<li>a string is a type of structured data - a sequence of characters, e.g. 'udacity'</li>
+				<li>a list is a sequence of anything, e.g. p = ['u','d','a','c','i','t','y']</li>
+				<li>lists can be indexed like strings</li>
+				<li>you can nest lists within lists</li>
+				<li>with nested lists and indexing the following is possible: you can access the second item in the second list like this: list[1][1] where the first number corresponds to the index of the second list in a list and the second number corresponds to the second item in that second list</li>
+			</ul>
+			<div class="subsection">
+				<h4><a id="Mutation">Mutation</a></h4>
+				<ul>
+					<li>you cannot use mutation with a string, strings that are changed are simply reassigned to a different value, never changed</li>
+					<li>using an index assignment (e.g. list[0]) and assigning it a value will replace that index's value</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="Alias">Aliasing</a></h4>
+				<ul>
+					<li>two variable names assigned to the same object means that any change to one will also change the other one</li>
+					<li>one alias can be reassigned to a different value and the two are no longer aliases</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="Operations">List Operations</a></h4>
+				<ul>
+					<li>append - <em>list.append(element)</em> - toadd a new element to the end of the list</li>
+					<li>+ - [0,1] + [2,3] gives [0,1,2,3] - kind of like concatenating two lists</li>
+					<li>len - <em>len(list)</em> - gives the number of elements in the list, it only counts the outer elements not any lists within the list</li>
+					<li>index - <em>list.index(value)</em> - will find the value in the list and return that value's index, but returns an error when the value is not found</li>
+					<li>in - <em>value in list</em> - returns a Boolean of True if value is there and False if it is not</li>
+					<li><em>value not in list</em> - gives the opposite Booleans</li>
+				</ul>
+			</div>
+			<div class="subsection">
+				<h4><a id="For">For Loops</a></h4>
+				<ul>
+					<li><em>for item in list:</em></li>
+					<li>set up similarly to while loops</li>
+					<li>they automatically iterate through each item in the list</li>
+					<li>the item is not a counter! Do not use it like this</li>
+				</ul>
+			</div>
+		</div>
+		<div class="notes">
+			<h3><a id="Problem">Understanding a Computational Problem</a></h3>
+			<ul>
+				<li>problems have inputs and outputs</li>
+				<li>the problem is defined by all possible inputs (set, usually infinite) and the relationship between inputs and desired outputs</li>
+				<li>Pythonista's Guide to All Problems in the Galaxy
+					<ul>
+						<li>Step 0: DON'T PANIC</li>
+						<li>Step 1: Understand the INPUTS</li>
+						<li>Step 2: Understand the OUTPUTS</li>
+						<li>Step 3: Understand the I/O relationship by trying some examples</li>
+						<li>Step 4: Consider how to systematically solve the problem</li>
+						<li>Step 5: Develop incrementally and TEST along the way</li>
+					</ul>
+				</li>
+				<li>don't optimize prematurely</li>
+				<li>try to make it simple and correct</li>
+				<li>a good strategy is to use "pseudo code" to make an algorithm
+					<ul>
+						<li>go through step by step and write down the "code" you would enter for each step</li>
+						<li>look at what you have and try to identify edge cases that are not handled by the current solution</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+<!-- also, restructure Python section to allow higher readability-->
